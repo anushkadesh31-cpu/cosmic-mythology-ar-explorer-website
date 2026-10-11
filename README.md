@@ -1,32 +1,26 @@
-# React + TypeScript + Vite
+# Cosmic Mythology AR Explorer Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This repository contains the **independent web version** of the Cosmic Mythology AR Explorer. It is a modern, responsive website built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. The site showcases constellations, provides a searchable catalog, and offers an immersive UI for exploring mythological stories in an augmented‑reality‑inspired experience.
 
-Currently, two official plugins are available:
+## Features
+- Interactive landing page with hero image and star‑field background
+- Search bar for filtering constellations case‑insensitively
+- Constellation cards with hover animations and modals for details
+- Responsive navigation bar with smooth scrolling for desktop and mobile
+- Accessible components and controlled inputs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Development
+- Run `npm install` to install dependencies.
+- Use `npm run dev` to start the Vite development server.
+- Build the production bundle with `npm run build`.
 
-## React Compiler
+## Tech Stack
+- **React** 19.x
+- **TypeScript** ~6.0
+- **Vite** 8.x
+- **Tailwind CSS** 4.3.3
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+*This website is separate from the Flutter mobile application and does not share its codebase.*
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
